@@ -1,5 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
+// :root[data-theme="light"] {
+//   --text: #0b140c;
+//   --background: #f2f8f2;
+//   --primary: #00ff15;
+//   --accent: #175dcf;
+// }
+// :root[data-theme="dark"] {
+//   --text: #ebf4ec;
+//   --background: #070d07;
+//   --primary: #00ff15;
+//   --accent: #3077e8;
+// }
+
 const GlobalStyles = createGlobalStyle`
 :root {
   &, &.light-mode {
