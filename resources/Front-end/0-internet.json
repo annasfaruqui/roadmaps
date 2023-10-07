@@ -1,0 +1,37 @@
+[
+    {
+        "Topic": "How does the Internet Work?",
+        "Description": "An overview of how the Internet functions, including data transmission and network protocols.",
+        "Resource": "https://cs.fyi/guide/how-does-internet-work"
+    },
+    {
+        "Topic": "The Internet Explained",
+        "Description": "A detailed explanation of the Internet's history, infrastructure, and its impact on society.",
+        "Resource": "https://www.vox.com/2014/6/16/18076282/the-internet"
+    },
+    {
+        "Topic": "How Does the Internet Work?",
+        "Description": "A whitepaper providing technical insights into the structure and operation of the Internet.",
+        "Resource": "http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm"
+    },
+    {
+        "Topic": "Introduction to Internet",
+        "Description": "A comprehensive guide to what the Internet is and how it functions.",
+        "Resource": "/guides/what-is-internet"
+    },
+    {
+        "Topic": "Learn How the Web Works",
+        "Description": "Educational content explaining the fundamentals of how the web and Internet operate.",
+        "Resource": "https://internetfundamentals.com"
+    },
+    {
+        "Topic": "How does the Internet work? (Video)",
+        "Description": "A video tutorial explaining the core concepts of how the Internet functions.",
+        "Resource": "https://www.youtube.com/watch?v=x3c1ih2NJEg"
+    },
+    {
+        "Topic": "How the Internet Works in 5 Minutes (Video)",
+        "Description": "A concise video explaining the key components and processes of the Internet.",
+        "Resource": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+    }
+]

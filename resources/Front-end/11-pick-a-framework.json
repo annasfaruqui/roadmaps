@@ -1,0 +1,17 @@
+[
+    {
+        "Topic": "Pick a Framework",
+        "Description": "Web frameworks provide collections of libraries and tools to aid in web application development, defining structure and rules for development.",
+        "Resource": ""
+    },
+    {
+        "Topic": "What is the difference between a framework and a library?",
+        "Description": "Watch a video explaining the difference between a framework and a library, helping you understand their roles in development.",
+        "Resource": "https://www.youtube.com/watch?v=D_MO9vIRBcA"
+    },
+    {
+        "Topic": "Which JS Framework is best?",
+        "Description": "Explore a video discussing the best JavaScript frameworks and their suitability for different projects.",
+        "Resource": "https://www.youtube.com/watch?v=cuHDQhDhvPE"
+    }
+]

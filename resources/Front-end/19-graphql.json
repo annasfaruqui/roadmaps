@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Introduction to GraphQL",
+        "Description": "Official GraphQL documentation that provides an introduction to GraphQL, explaining its purpose and benefits.",
+        "Resource": "https://graphql.org/learn/"
+    },
+    {
+        "Name": "The Fullstack Tutorial for GraphQL",
+        "Description": "A comprehensive tutorial that covers GraphQL from beginner to advanced topics, including backend and frontend development with GraphQL.",
+        "Resource": "https://www.howtographql.com/"
+    },
+    {
+        "Name": "GraphQL Tutorials",
+        "Description": "A series of interactive tutorials that help you learn GraphQL by building real projects step by step.",
+        "Resource": "https://odyssey.apollographql.com/"
+    },
+    {
+        "Name": "GraphQL Course for Beginners (Video)",
+        "Description": "A YouTube video course designed for beginners, providing an introduction to GraphQL and its usage.",
+        "Resource": "https://www.youtube.com/watch?v=ed8SzALpx1Q"
+    },
+    {
+        "Name": "Introduction to GraphQL",
+        "Description": "An article that introduces GraphQL and its key concepts, highlighting its role in modern web development.",
+        "Resource": "https://thenewstack.io/introduction-to-graphql/"
+    },
+    {
+        "Name": "How to Execute a Simple GraphQL Query",
+        "Description": "A tutorial explaining how to execute a basic GraphQL query, providing a hands-on example.",
+        "Resource": "https://thenewstack.io/how-to-execute-a-simple-graphql-query/"
+    }
+]

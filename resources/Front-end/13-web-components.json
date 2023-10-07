@@ -1,0 +1,22 @@
+[
+    {
+        "Topic": "Web Components",
+        "Description": "Web Components is a set of technologies that enables the creation of reusable custom elements with encapsulated functionality for web applications.",
+        "Resource": ""
+    },
+    {
+        "Topic": "Web Components | MDN",
+        "Description": "Learn about Web Components from the Mozilla Developer Network (MDN) documentation, which provides in-depth information and resources.",
+        "Resource": "https://developer.mozilla.org/en-US/docs/Web/Web_Components"
+    },
+    {
+        "Topic": "WebComponents.org",
+        "Description": "Explore Web Components on the official WebComponents.org website, offering documentation, tutorials, and more.",
+        "Resource": "https://webcomponents.github.io/"
+    },
+    {
+        "Topic": "Web Components Crash Course",
+        "Description": "Watch a crash course video on Web Components to quickly get started with this technology.",
+        "Resource": "https://www.youtube.com/watch?v=PCWaFLy3VUo"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "Topic": "CSS Architecture",
+        "Description": "Managing CSS in large, complex systems is challenging. Different CSS methodologies help in writing more maintainable CSS.",
+        "Resource": ""
+    },
+    {
+        "Topic": "A Look at Some CSS Methodologies",
+        "Description": "Explore various CSS methodologies to learn about best practices for structuring and organizing your CSS code.",
+        "Resource": "https://www.webfx.com/blog/web-design/css-methodologies/"
+    },
+    {
+        "Topic": "BEM Official Website",
+        "Description": "Visit the official website of BEM (Block Element Modifier), a popular CSS methodology for writing maintainable and modular CSS.",
+        "Resource": "https://en.bem.info"
+    },
+    {
+        "Topic": "OOCSS Official Website",
+        "Description": "Learn about OOCSS (Object-Oriented CSS) by visiting its official website. OOCSS promotes reusability and maintainability in CSS.",
+        "Resource": "http://oocss.org/"
+    },
+    {
+        "Topic": "SMACSS Official Website",
+        "Description": "Explore the official website of SMACSS (Scalable and Modular Architecture for CSS) to understand its principles for organizing CSS.",
+        "Resource": "http://smacss.com/"
+    }
+]

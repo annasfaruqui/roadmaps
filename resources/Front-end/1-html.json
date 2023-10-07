@@ -1,0 +1,52 @@
+[
+    {
+        "Topic": "HTML",
+        "Description": "HTML stands for HyperText Markup Language. It is used on the frontend and gives structure to webpages, which you can style with CSS and make interactive with JavaScript.",
+        "Resource": ""
+    },
+    {
+        "Topic": "Learn HTML (W3Schools)",
+        "Description": "A comprehensive HTML tutorial for beginners and experienced developers.",
+        "Resource": "https://www.w3schools.com/html/html_intro.asp"
+    },
+    {
+        "Topic": "HTML Elements Reference",
+        "Description": "A reference guide that provides an overview of all HTML elements.",
+        "Resource": "https://htmlreference.io/"
+    },
+    {
+        "Topic": "HTML For Beginners",
+        "Description": "An easy-to-follow HTML tutorial for beginners.",
+        "Resource": "https://html.com"
+    },
+    {
+        "Topic": "Web Development Basics",
+        "Description": "Learn HTML and CSS with interactive tutorials and examples.",
+        "Resource": "https://www.internetingishard.com/html-and-css/"
+    },
+    {
+        "Topic": "Codecademy - Learn HTML",
+        "Description": "A hands-on HTML learning platform with interactive exercises.",
+        "Resource": "https://www.codecademy.com/learn/learn-html"
+    },
+    {
+        "Topic": "Interactive HTML Course",
+        "Description": "An interactive HTML course on GitHub.",
+        "Resource": "https://github.com/denysdovhan/learnyouhtml"
+    },
+    {
+        "Topic": "HTML Full Course (YouTube)",
+        "Description": "A comprehensive HTML tutorial on YouTube covering all aspects of HTML.",
+        "Resource": "https://youtu.be/mJgBOIoGihA"
+    },
+    {
+        "Topic": "HTML Website Building Tutorial (YouTube)",
+        "Description": "A step-by-step tutorial on building a website with HTML on YouTube.",
+        "Resource": "https://www.youtube.com/watch?v=pQN-pnXPaVg"
+    },
+    {
+        "Topic": "HTML Crash Course (YouTube)",
+        "Description": "A crash course in HTML for beginners on YouTube.",
+        "Resource": "https://www.youtube.com/watch?v=qz0aGYrrlhU"
+    }
+]

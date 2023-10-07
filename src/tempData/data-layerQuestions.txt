@@ -1,0 +1,55 @@
+Layer 1: What interests you the most?
+|
+|-- (a) Building user interfaces and web applications
+|    |
+|    |-- Layer 2: Which programming languages interest you?
+|    |    |
+|    |    |-- (a) JavaScript
+|    |    |    |
+|    |    |    |-- Recommendation: Front-End Developer
+|    |    |    |    |
+|    |    |    |-- Suggested Courses: HTML, CSS, JavaScript
+|    |    |
+|    |    |-- (b) Python
+|    |         |
+|    |         |-- Recommendation: Python Web Developer
+|    |         |    |
+|    |         |-- Suggested Courses: Python, Django, Web Development
+|    |
+|    |-- (b) Analyzing and working with data
+|    |    |
+|    |    |-- Layer 2: Do you enjoy data analysis and statistics?
+|    |    |    |
+|    |    |    |-- (a) Yes
+|    |    |    |    |
+|    |    |    |    |-- Recommendation: Data Scientist
+|    |    |    |    |    |
+|    |    |    |    |-- Suggested Courses: Data Analysis, Machine Learning, Python
+|    |    |    |
+|    |    |    |-- (b) No
+|    |    |         |
+|    |    |         |-- Recommendation: Data Analyst
+|    |    |         |    |
+|    |    |         |-- Suggested Courses: Data Analysis, Excel, SQL
+|    |
+|    |-- (c) Managing and optimizing databases
+|    |    |
+|    |    |-- Recommendation: Database Administrator
+|    |    |    |
+|    |    |-- Suggested Courses: Database Management, SQL, Data Security
+|    |
+|    |-- (d) Automating software development and deployment
+|         |
+|         |-- Layer 2: Do you enjoy automation and optimization?
+|         |    |
+|         |    |-- (a) Yes
+|         |    |    |
+|         |    |    |-- Recommendation: DevOps Engineer
+|         |    |    |    |
+|         |    |    |-- Suggested Courses: DevOps, CI/CD, Automation Tools
+|         |    |
+|         |    |-- (b) No
+|              |
+|              |-- Recommendation: Backend Developer
+|              |    |
+|              |-- Suggested Courses: Server-side Programming, Databases, APIs

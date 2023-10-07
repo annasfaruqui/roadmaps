@@ -1,0 +1,17 @@
+[
+    {
+        "Topic": "CSS Frameworks",
+        "Description": "CSS frameworks provide pre-built CSS stylesheets with classes and structures for web page elements, simplifying web development.",
+        "Resource": ""
+    },
+    {
+        "Topic": "CSS Frameworks Introduction",
+        "Description": "Learn more about CSS frameworks and their purpose by reading this introduction on Wikipedia.",
+        "Resource": "https://en.wikipedia.org/wiki/CSS_framework"
+    },
+    {
+        "Topic": "What are the benefits of using a CSS framework?",
+        "Description": "Discover the advantages of using a CSS framework in web development by reading this article.",
+        "Resource": "https://css-tricks.com/what-are-the-benefits-of-using-a-css-framework/"
+    }
+]

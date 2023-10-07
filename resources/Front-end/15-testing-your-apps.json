@@ -1,0 +1,22 @@
+[
+    {
+        "Topic": "Testing your apps",
+        "Description": "Testing is essential to ensure that your application meets its requirements and functions without unintended bugs. Explore various resources to learn more about software testing.",
+        "Resource": ""
+    },
+    {
+        "Topic": "A comprehensive dive into software testing",
+        "Description": "Learn about software testing in-depth with this comprehensive resource.",
+        "Resource": "https://www.softwaretestingmaterial.com/software-testing/"
+    },
+    {
+        "Topic": "The different types of software tests",
+        "Description": "Discover the various types of software tests used in the development process.",
+        "Resource": "https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing"
+    },
+    {
+        "Topic": "Testing React apps with Jest",
+        "Description": "Explore how to test React applications using the Jest testing framework.",
+        "Resource": "https://jestjs.io/docs/tutorial-react"
+    }
+]

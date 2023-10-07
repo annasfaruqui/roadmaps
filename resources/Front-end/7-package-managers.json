@@ -1,0 +1,37 @@
+[
+    {
+        "Topic": "Package Managers",
+        "Description": "Package managers allow you to manage the dependencies (external code) your project needs to function correctly.",
+        "Resource": ""
+    },
+    {
+        "Topic": "Modern JavaScript for Dinosaurs",
+        "Description": "Read about modern JavaScript and its usage, including dependency management.",
+        "Resource": "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html"
+    },
+    {
+        "Topic": "An Absolute Beginners Guide to Using npm",
+        "Description": "Learn the basics of using npm (Node Package Manager), a popular package manager for JavaScript.",
+        "Resource": "https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/"
+    },
+    {
+        "Topic": "Yarn - Getting Started",
+        "Description": "Get started with Yarn, a fast and reliable package manager, by following this guide.",
+        "Resource": "https://yarnpkg.com/en/docs/getting-started"
+    },
+    {
+        "Topic": "NPM tutorial for Beginners (YouTube)",
+        "Description": "Watch a beginner-friendly tutorial on using npm, the Node Package Manager, on YouTube.",
+        "Resource": "https://www.youtube.com/watch?v=2V1UUhBJ62Y"
+    },
+    {
+        "Topic": "NPM Crash Course (YouTube)",
+        "Description": "Explore a crash course on npm (Node Package Manager) on YouTube, covering its key features and usage.",
+        "Resource": "https://www.youtube.com/watch?v=jHDhaSSKmB0"
+    },
+    {
+        "Topic": "Yarn Crash Course (YouTube)",
+        "Description": "Watch a crash course on Yarn, a popular package manager, to quickly learn how to use it effectively.",
+        "Resource": "https://www.youtube.com/watch?v=g9_6KmiBISk"
+    }
+]

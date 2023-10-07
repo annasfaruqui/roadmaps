@@ -1,0 +1,27 @@
+[
+    {
+        "Name": "What is Server-Side Rendering?",
+        "Description": "An educative answer that explains the concept of server-side rendering (SSR) and how it works in web development.",
+        "Resource": "https://www.educative.io/answers/what-is-server-side-rendering"
+    },
+    {
+        "Name": "When Should I Server-Side Render?",
+        "Description": "A Medium article that discusses the scenarios and considerations for implementing server-side rendering in web applications.",
+        "Resource": "https://medium.com/@mbleigh/when-should-i-server-side-render-c2a383ff2d0f"
+    },
+    {
+        "Name": "Server-Side Rendering (SSR)",
+        "Description": "Official documentation from Vue.js explaining server-side rendering (SSR) and how to implement it in Vue.js applications.",
+        "Resource": "https://vuejs.org/guide/scaling-up/ssr.html"
+    },
+    {
+        "Name": "What is Server Side Rendering? (Video)",
+        "Description": "A YouTube video that provides a visual explanation of server-side rendering and its importance in web development.",
+        "Resource": "https://www.youtube.com/watch?v=GQzn7XRdzxY"
+    },
+    {
+        "Name": "What is Server-Side Rendering for Web Development? (Video)",
+        "Description": "Another YouTube video that explains the concept of server-side rendering and its role in web development.",
+        "Resource": "https://www.youtube.com/watch?v=okvg3MRAPs0"
+    }
+]

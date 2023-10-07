@@ -1,0 +1,22 @@
+[
+    {
+        "Name": "Progressive Web Apps for Beginners",
+        "Description": "Learn the basics of Progressive Web Apps (PWAs) and how they provide an enhanced user experience by combining web and mobile app features. Suitable for beginners.",
+        "Resource": "https://www.freecodecamp.org/news/what-are-progressive-web-apps/"
+    },
+    {
+        "Name": "Learn PWA",
+        "Description": "Web.dev by Google provides a comprehensive guide to learning Progressive Web Apps (PWAs). Explore various aspects of PWAs, from getting started to advanced topics.",
+        "Resource": "https://web.dev/learn/pwa/"
+    },
+    {
+        "Name": "MDN Web Docs: Progressive Web Apps",
+        "Description": "Mozilla Developer Network (MDN) offers extensive documentation on Progressive Web Apps (PWAs). Dive deep into PWA concepts, development, and best practices.",
+        "Resource": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/"
+    },
+    {
+        "Name": "Build a Progressive Web App",
+        "Description": "Watch a video tutorial on building a Progressive Web App (PWA). Follow along to create your PWA and understand the steps involved in the development process.",
+        "Resource": "https://www.youtube.com/watch?v=sFsRylCQblw"
+    }
+]

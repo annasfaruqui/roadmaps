@@ -1,0 +1,36 @@
+/* Sidebar.css */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0; /* Fixed at the top of the screen */
+  left: 0; /* Fixed at the left side of the screen */
+  height: 100%; /* Make the sidebar full height */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Content.css */
+.content {
+  margin-left: 250px; /* Adjust the margin to match the sidebar width */
+  padding: 20px;
+  background-color: #f4f4f4; /* Add a background color to the content area */
+  transition: margin-left 0.3s; /* Add transition for smooth sliding effect */
+}
+
+/* Adjust the content width to take up the remaining space */

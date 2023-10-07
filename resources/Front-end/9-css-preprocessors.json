@@ -1,0 +1,17 @@
+[
+    {
+        "Topic": "CSS Preprocessors",
+        "Description": "CSS preprocessors are scripting languages that extend the capabilities of CSS, allowing for variables, nesting, inheritance, mixins, functions, and more.",
+        "Resource": ""
+    },
+    {
+        "Topic": "CSS Preprocessors Explained",
+        "Description": "Read an explanation of CSS preprocessors and their benefits in this resource.",
+        "Resource": "https://www.freecodecamp.org/news/css-preprocessors/"
+    },
+    {
+        "Topic": "Why Use Preprocessors?",
+        "Description": "Learn why CSS preprocessors are valuable and how they can improve your CSS workflow.",
+        "Resource": "https://sherocommerce.com/what-is-a-css-preprocessors-why-use-them/"
+    }
+]

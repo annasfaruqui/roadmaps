@@ -1,0 +1,22 @@
+[
+    {
+        "Topic": "Build Tools",
+        "Description": "Build tools automate repetitive development tasks like server setup, code compilation, and more to streamline your workflow.",
+        "Resource": ""
+    },
+    {
+        "Topic": "webpack",
+        "Description": "webpack is a static module bundler for modern JavaScript applications, helping you bundle and optimize your code.",
+        "Resource": "https://webpack.js.org/"
+    },
+    {
+        "Topic": "Vite",
+        "Description": "Vite is a next-generation frontend tooling system that provides fast development server and build setup for your projects.",
+        "Resource": "https://vitejs.dev"
+    },
+    {
+        "Topic": "Parcel",
+        "Description": "Parcel is a zero-configuration build tool for the web, simplifying the process of building web applications.",
+        "Resource": "https://parceljs.org/"
+    }
+]

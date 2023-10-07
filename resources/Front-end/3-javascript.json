@@ -1,0 +1,62 @@
+[
+    {
+        "Topic": "JavaScript",
+        "Description": "JavaScript allows you to add interactivity to your web pages. It enables features such as sliders, click interactions, pop-ups, and more.",
+        "Resource": ""
+    },
+    {
+        "Topic": "Visit Dedicated JavaScript Roadmap",
+        "Description": "A dedicated roadmap to learning JavaScript on this platform.",
+        "Resource": "/javascript"
+    },
+    {
+        "Topic": "W3Schools – JavaScript Tutorial",
+        "Description": "W3Schools offers a comprehensive JavaScript tutorial for beginners and experienced developers.",
+        "Resource": "https://www.w3schools.com/js/"
+    },
+    {
+        "Topic": "The Modern JavaScript Tutorial",
+        "Description": "A modern and up-to-date tutorial covering various JavaScript topics.",
+        "Resource": "https://javascript.info/"
+    },
+    {
+        "Topic": "Learn JavaScript",
+        "Description": "A resource that covers many JavaScript topics and concepts.",
+        "Resource": "https://www.javascripttutorial.net/"
+    },
+    {
+        "Topic": "Eloquent JavaScript textbook",
+        "Description": "An online textbook for learning JavaScript with interactive examples.",
+        "Resource": "https://eloquentjavascript.net/"
+    },
+    {
+        "Topic": "You Don't Know JS Yet (book series)",
+        "Description": "A book series providing in-depth knowledge of JavaScript.",
+        "Resource": "https://github.com/getify/You-Dont-Know-JS"
+    },
+    {
+        "Topic": "JavaScript Crash Course for Beginners (YouTube)",
+        "Description": "A crash course in JavaScript for beginners on YouTube.",
+        "Resource": "https://youtu.be/hdI2bqOjy3c?t=2"
+    },
+    {
+        "Topic": "Build a Netflix Landing Page Clone with HTML, CSS & JS (YouTube)",
+        "Description": "A YouTube tutorial on building a Netflix landing page clone using HTML, CSS, and JavaScript.",
+        "Resource": "https://youtu.be/P7t13SGytRk?t=22"
+    },
+    {
+        "Topic": "Build 30 JavaScript projects in 30 days",
+        "Description": "A challenge to build 30 JavaScript projects in 30 days to enhance your skills.",
+        "Resource": "https://javascript30.com/"
+    },
+    {
+        "Topic": "Learn the basics of JavaScript",
+        "Description": "A workshopper tutorial for learning the basics of JavaScript.",
+        "Resource": "https://github.com/workshopper/javascripting"
+    },
+    {
+        "Topic": "JavaScript for Beginners",
+        "Description": "A course for JavaScript beginners offered by Scaler Academy.",
+        "Resource": "https://www.scaler.com/topics/course/javascript-beginners"
+    }
+]

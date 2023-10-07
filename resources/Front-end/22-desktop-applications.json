@@ -1,0 +1,22 @@
+[
+    {
+        "Name": "Electron",
+        "Description": "Electron is an open-source framework for building cross-platform desktop applications using web technologies like HTML, CSS, and JavaScript.",
+        "Resource": "https://www.electronjs.org/"
+    },
+    {
+        "Name": "NodeGUI",
+        "Description": "NodeGUI is an open-source library for building native desktop applications using JavaScript and CSS styling. It's lightweight and works with React.",
+        "Resource": "https://docs.nodegui.org/"
+    },
+    {
+        "Name": "NW.js",
+        "Description": "NW.js (previously known as Node-WebKit) is an open-source framework for building desktop applications using web technologies like HTML and JavaScript.",
+        "Resource": "https://nwjs.io/"
+    },
+    {
+        "Name": "Meteor",
+        "Description": "Meteor is an open-source platform for building web, mobile, and desktop applications using JavaScript. It provides full-stack capabilities.",
+        "Resource": "https://www.meteor.com/"
+    }
+]
