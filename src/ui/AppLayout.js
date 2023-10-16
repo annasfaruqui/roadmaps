@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 import Sidebar from "./Sidebar";
 import Header from "./Header";
-import Footer from "./Footer";
 
 const StyledAppLayout = styled.div`
   display: grid;
@@ -21,6 +20,7 @@ const Main = styled.main`
 const Container = styled.div`
   max-width: 105rem;
   margin: 0 auto;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -34,7 +34,6 @@ function AppLayout() {
       <Main>
         <Container>
           <Outlet />
-          <Footer />
         </Container>
       </Main>
     </StyledAppLayout>

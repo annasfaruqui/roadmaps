@@ -5,14 +5,14 @@ import Heading from "../ui/Heading";
 import "./FlipCard.css";
 
 // IMAGES
-import frontend from "./imgs/frontend.svg";
-import backend from "./imgs/backend.svg";
-import ml from "./imgs/ml.svg";
-import uiux from "./imgs/ui-ux.svg";
-import cybersecurity from "./imgs/cybersecurity.svg";
-import fullstack from "./imgs/fullstack.svg";
-import devops from "./imgs/devops.svg";
-import android from "./imgs/android.svg";
+import frontend from "../images/roadmap-illusartions/frontend.svg";
+import backend from "../images/roadmap-illusartions/backend.svg";
+import ml from "../images/roadmap-illusartions/frontend.svg";
+import uiux from "../images/roadmap-illusartions/ui-ux.svg";
+import cybersecurity from "../images/roadmap-illusartions/cybersecurity.svg";
+import fullstack from "../images/roadmap-illusartions/fullstack.svg";
+import devops from "../images/roadmap-illusartions/devops.svg";
+import android from "../images/roadmap-illusartions/android.svg";
 
 // Temporary data (NOT used in application)
 const tempData = [

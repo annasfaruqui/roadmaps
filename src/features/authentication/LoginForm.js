@@ -75,7 +75,7 @@ function LoginForm() {
           type="reset"
           disabled={isLoading}
         >
-          {!isLoading ? "Cancel" : <SpinnerMini />}
+          Cancel
         </Button>
         <Button size="large" disabled={isLoading}>
           {!isLoading ? "Login" : <SpinnerMini />}

@@ -1,31 +1,36 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { Toaster } from "react-hot-toast";
 
-import "./style.css";
 import GlobalStyles from "./styles/GlobalStyles";
 
+// HomePage pages
 import HomePage from "./pages/HomePage";
-import Login from "./pages/Login";
-import User from "./pages/User";
-import Dashboard from "./pages/Dashboard";
-import Account from "./pages/Account";
-import AssessmentPage from "./pages/AssessmentPage";
+import AboutPage from "./pages/AboutPage";
 import ArticlesPage from "./pages/ArticlesPage";
-import Testimonials from "./pages/Testimonials";
-import PageNotFound from "./pages/PageNotFound";
+import TeamPage from "./pages/TeamPage";
+import AssessmentPage from "./pages/AssessmentPage";
 
-import Assessment from "./features/assessment/Assessment";
+// Sign in and login pages
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+
+// After login pages(in protected Route)
+import DashboardPage from "./pages/DashboardPage";
+import AccountPage from "./pages/AccountPage";
+
+// Some other pages
+import PageNotFound from "./pages/PageNotFound";
 
 import PersonalizedRoadmaps from "./components/PersonalizedRoadmaps";
 import RoadMap from "./components/Roadmaps/RoadMap";
 
-import AppLayout from "./ui/AppLayout";
-import AppLayoutOutside from "./ui/AppLayoutOutside";
+import LandingPageLayout from "./ui/LandingPageLayout";
 import ProtectedRoute from "./ui/ProtectedRoute";
+import AppLayout from "./ui/AppLayout";
 
 import { DarkModeProvider } from "./context/DarkModeContext";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 // Used to set up Cache behind the scenes
 const queryClient = new QueryClient({
@@ -44,11 +49,18 @@ function App() {
         <GlobalStyles />
         <BrowserRouter>
           <Routes>
-            <Route index element={<Navigate replace to="homepage" />} />
-            <Route path="homepage" element={<HomePage />} />
+            <Route index element={<Navigate replace to="/home" />} />
+            <Route path="/home" element={<HomePage />} />
 
-            <Route path="/signup" element={<User />} />
-            <Route path="/login" element={<Login />} />
+            <Route element={<LandingPageLayout />}>
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/articles" element={<ArticlesPage />} />
+              <Route path="/team" element={<TeamPage />} />
+            </Route>
+
+            <Route path="/assessment" element={<AssessmentPage />} />
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/login" element={<LoginPage />} />
 
             <Route
               element={
@@ -58,24 +70,10 @@ function App() {
               }
             >
               <Route index element={<Navigate replace to="/dashboard" />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/assessment-home" element={<AssessmentPage />} />
-              <Route path="/account" element={<Account />} />
+              <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/account" element={<AccountPage />} />
               <Route path="/roadmaps" element={<PersonalizedRoadmaps />} />
               <Route path="/roadmaps/:roadmap" element={<RoadMap />} />
-              <Route path="/articles" element={<ArticlesPage />} />
-              <Route path="/testimonials" element={<Testimonials />} />
-            </Route>
-
-            <Route
-              element={
-                <ProtectedRoute>
-                  <AppLayoutOutside />
-                </ProtectedRoute>
-              }
-            >
-              <Route element={<Navigate replace to="assessment" />} />
-              <Route path="/assessment" element={<Assessment />} />
             </Route>
 
             <Route path="*" element={<PageNotFound />} />

@@ -1,72 +1,97 @@
 import styled from "styled-components";
 
+import heroImg from "../../images/sections-header-image.jpg";
 import Button from "../../ui/Button";
-import GlobalP from "../../styles/GlobalP";
-import HighlightContainer from "../../styles/HighlightContainer";
-import { useNavigate } from "react-router-dom";
-import { useUser } from "../authentication/useUser";
-import SpinnerMini from "../../ui/SpinnerMini";
 
 const StyledHero = styled.div`
+  grid-column: 1/-1;
+  grid-row: 1;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(${heroImg});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  position: relative;
+`;
+
+const ContentBox = styled.div`
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eee;
+
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  margin-top: 1.2rem;
+  align-items: center;
+`;
+
+const Intro = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-bottom: 1rem;
+  color: #9fb3ff;
+`;
+
+const Title = styled.h1`
+  font-size: 10rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  word-spacing: 5px;
+  margin-bottom: 2rem;
+
+  & span {
+    color: #9fb3ff;
+  }
+`;
+
+const Description = styled.p`
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 4rem;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 `;
 
 function Hero() {
-  const navigate = useNavigate();
-  const { isLoading, isAuthenticated } = useUser();
-
-  function handleClick() {
-    if (!isLoading && !isAuthenticated) navigate("/login");
-    if (isLoading) return <SpinnerMini />;
-    if (isAuthenticated) navigate("/assessment-home");
-  }
-
   return (
-    <>
-      <StyledHero>
-        <GlobalP>
-          Embark on a journey of knowledge and expertise with our meticulously
-          crafted technology roadmaps. Whether you're an aspiring developer, a
-          seasoned IT professional, or simply curious about the ever-evolving
-          tech landscape, our roadmaps are your trusted guide to efficient
-          learning. Explore our curated pathways, complete with expert insights,
-          recommended resources, and milestones. Start your learning adventure
-          today and stay ahead in the world of technology.
-        </GlobalP>
-
-        <GlobalP>
-          Ready to kickstart your journey towards tech mastery but not sure
-          where to begin? Take our personalized assessment test! It's your first
-          step towards a tailor-made learning experience. Our assessment will
-          gauge your current knowledge, skills, and goals, enabling us to
-          recommend the perfect roadmap for your unique needs. Whether you're a
-          coding newbie or a seasoned pro, our test will ensure your learning
-          journey is efficient and effective. Get started now and unlock your
-          path to tech expertise!
-        </GlobalP>
-      </StyledHero>
-      <HighlightContainer>
-        <GlobalP>
-          "Our assessment test isn't just a formality; it's your key to
-          unlocking a learning journey that suits you like a glove. By taking
-          this test, you gain invaluable insights into your current knowledge
-          and skills, helping us understand your unique learning needs. Armed
-          with this information, we can recommend the perfect technology roadmap
-          to match your proficiency level and align with your specific goals.
-          Say goodbye to one-size-fits-all approaches and hello to a
-          personalized learning experience that maximizes your potential. Take
-          the test today and pave the way for a learning journey that's as
-          unique as you are"
-        </GlobalP>
-
-        <Button size="large" onClick={handleClick}>
-          TAKE ASSESSMENT NOW &rarr;
-        </Button>
-      </HighlightContainer>
-    </>
+    <StyledHero>
+      <ContentBox>
+        <Intro>Start learning now</Intro>
+        <Title>
+          Your path to <span>tech expertise</span> starts here
+        </Title>
+        <Description>
+          Unlock Your Potential in Tech: Explore Guided Roadmaps to Master
+          Frontend and Backend Development, Data Science, Cybersecurity, and
+          More – Your Journey Starts Here!
+        </Description>
+        <ButtonContainer>
+          <Button size="large">Start exploring</Button>
+          <Button sie="large" variation="secondary">
+            Learn more &darr;
+          </Button>
+        </ButtonContainer>
+      </ContentBox>
+    </StyledHero>
   );
 }
 

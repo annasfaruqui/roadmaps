@@ -1,129 +1,136 @@
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-import Heading from "../../ui/Heading";
-import Spinner from "../../ui/Spinner";
-import Error from "../../ui/Error";
+import Title from "../../ui/Title";
+import SectionHeading from "../../ui/SectionHeading";
 
-const KEY = "1fd5d7321e70437b9dadb4b2731f18d6";
-const TECH_KEYWORD = "technology";
+import { articles } from "../../components/Roadmaps/data/data-articles";
 
-const ArticlesList = styled.ul`
-  list-style: none;
+const ArticlesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: flex-start;
+  gap: 1rem;
 `;
 
-const ListItem = styled.li`
-  display: grid;
-  grid-template-columns: 40rem 1fr;
-  grid-template-rows: repeat(4, auto);
-  column-gap: 2rem;
+const Intro = styled.p`
+  font-size: 2rem;
+  margin-bottom: 2rem;
+`;
 
-  border: 2px solid var(--color-grey-200);
-  border-radius: var(--border-radius-md);
+const ArticlesList = styled.ul`
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+`;
+
+const ArticleItem = styled.li`
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   overflow: hidden;
-  padding-right: 1.6rem;
+  border: 1px solid var(--color-grey-200);
 `;
 
-const ArticleImg = styled.img`
-  grid-row: 1/-1;
-  height: 100%;
+const Img = styled.img`
+  width: 100%;
 `;
 
-const Title = styled.h1`
+const Content = styled.div`
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+`;
+
+const Domain = styled.p`
   margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 2px 1rem;
+  border-radius: var(--border-radius-xl);
+  background-color: var(--color-brand-100);
+  color: var(--color-grey-500);
+`;
+
+const ArticleTitle = styled.h3`
   font-size: 2.8rem;
+`;
+
+const Date = styled.p`
+  font-size: 1.4rem;
   font-weight: 600;
+  color: var(--color-grey-400);
 `;
 
 const Description = styled.p`
-  margin: 1rem 0;
   font-size: 1.8rem;
-  line-height: 1.3;
 `;
 
-const Content = styled.p`
-  font-size: 1.6rem;
-  font-weight: 300;
-  margin-bottom: 1.8rem;
-`;
+const SrcLink = styled.p`
+  font-weight: 500;
+  color: var(--color-grey-600);
 
-const LinkEl = styled.a`
-  text-decoration: underline;
-  color: var(--color-brand-600);
-
-  &:hover {
-    color: var(--color-grey-500);
+  & a {
+    color: blue;
+    text-decoration: underline;
+    word-break: break-all;
   }
 `;
 
-function Articles() {
-  const [articles, setArticles] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState("");
-
-  useEffect(function () {
-    async function loadArticles() {
-      try {
-        setIsLoading(true);
-        const res = await fetch(
-          `https://newsapi.org/v2/everything?q=${TECH_KEYWORD}&apiKey=${KEY}`
-        );
-
-        if (!res.ok)
-          throw new Error("Something went wrong with fetching articles");
-
-        const data = await res.json();
-        const articles = data.articles;
-
-        setArticles(articles);
-      } catch (err) {
-        console.error("😓 Error: ", err.message);
-        setError(err.message);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    loadArticles();
-  }, []);
-
+function Article({ article }) {
   return (
-    <div>
-      <Heading as="h1">Tech Articles</Heading>
-      {isLoading ? (
-        <Spinner />
-      ) : error ? (
-        <Error message={error} />
-      ) : (
-        <ArticlesList>
-          {articles.map((article, index) => (
-            <ListItem key={index + 1}>
-              <ArticleImg
-                src={article.urlToImage}
-                alt={article.title}
-              ></ArticleImg>
-              <Title>{article.title}</Title>
-              <Description>{article.description}</Description>
-              <Content>
-                {article.content.split(" ").slice(1, -2).join(" ")} &nbsp;
-                <span>
-                  <LinkEl
-                    href={article.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read more &rarr;
-                  </LinkEl>
-                </span>
-              </Content>
-            </ListItem>
-          ))}
-        </ArticlesList>
-      )}
-    </div>
+    <ArticleItem>
+      <Img src={article.image} alt={article.title} />
+      <Content>
+        <Domain>{article.domain}</Domain>
+        <ArticleTitle>{article.title}</ArticleTitle>
+        {article.date !== "" && <Date>{article.date}</Date>}
+        <Description>{article.description}</Description>
+        <SrcLink>
+          Read more at:{" "}
+          <a href={article.link} target="_blank" rel="noreferrer">
+            {article.link}
+          </a>
+        </SrcLink>
+      </Content>
+    </ArticleItem>
+  );
+}
+
+function Articles() {
+  return (
+    <ArticlesContainer>
+      <Title>Explore our Latest Articles</Title>
+
+      <Intro>
+        Stay updated with the latest insights, tutorials, and tech news. Our
+        articles cover a wide range of topics, from programming languages to
+        best practices in software development. Dive into our knowledge base and
+        expand your expertise.
+      </Intro>
+
+      <SectionHeading>Featured Articles</SectionHeading>
+      <Title>
+        Delve into the World of Technology: Featured Articles and In-Depth
+        Insights
+      </Title>
+
+      <ArticlesList>
+        {articles.map((article) => (
+          <Article key={article.id} article={article} />
+        ))}
+      </ArticlesList>
+    </ArticlesContainer>
   );
 }
 

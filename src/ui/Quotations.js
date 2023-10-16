@@ -29,20 +29,6 @@ const quotes = [
     author: "Emily Davis",
     profession: "Web Developer",
   },
-  {
-    id: 5,
-    quote:
-      "A roadmap is your treasure map in the world of technology. It not only reveals the path to knowledge but also the hidden gems along the way.",
-    author: "Mark Williams",
-    profession: "Data Scientist",
-  },
-  {
-    id: 6,
-    quote:
-      "Roadmaps aren't just about reaching your destination; they're about enjoying the journey of learning, with each milestone bringing a sense of accomplishment.",
-    author: "Sarah Adams",
-    profession: "Tech Blogger",
-  },
 ];
 
 const StyledQuotation = styled.div`

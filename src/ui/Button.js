@@ -18,6 +18,11 @@ const sizes = {
     padding: 1.2rem 2.4rem;
     font-weight: 500;
   `,
+  huge: css`
+    font-size: 3rem;
+    padding: 1.6rem 3rem;
+    font-weight: 900;
+  `,
 };
 
 const variations = {
@@ -55,6 +60,10 @@ const Button = styled.button`
 
   ${(props) => sizes[props.size]}
   ${(props) => variations[props.variation]}
+
+  &:focus {
+    outline: 0;
+  }
 `;
 
 Button.defaultProps = {

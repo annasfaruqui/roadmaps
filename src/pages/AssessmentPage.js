@@ -1,17 +1,7 @@
-import AssessmentHome from "../features/assessment/AssessmentHome";
-import Heading from "../ui/Heading";
-import Row from "../ui/Row";
+import Assessment from "../features/assessment/Assessment";
 
 function AssessmentPage() {
-  return (
-    <>
-      <Row type="horizontal">
-        <Heading as="h1">Assessment</Heading>
-      </Row>
-
-      <AssessmentHome />
-    </>
-  );
+  return <Assessment />;
 }
 
 export default AssessmentPage;

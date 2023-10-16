@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-import { HiOutlinePencilSquare, HiOutlineRocketLaunch } from "react-icons/hi2";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { LuLayoutDashboard } from "react-icons/lu";
-import { RiChatQuoteLine } from "react-icons/ri";
-import { MdOutlineAssessment } from "react-icons/md";
 
 const NavList = styled.ul`
+  /* margin-top: 5rem; */
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -62,27 +61,9 @@ function MainNav() {
           </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/assessment-home">
-            <MdOutlineAssessment />
-            <span>Assessment</span>
-          </StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to="/articles">
-            <HiOutlinePencilSquare />
-            <span>Articles</span>
-          </StyledNavLink>
-        </li>
-        <li>
           <StyledNavLink to="/roadmaps">
             <HiOutlineRocketLaunch />
             <span>Roadmaps</span>
-          </StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to="/testimonials">
-            <RiChatQuoteLine />
-            <span>Testimonials</span>
           </StyledNavLink>
         </li>
       </NavList>
