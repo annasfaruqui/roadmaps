@@ -1,9 +1,10 @@
+import styled from "styled-components";
+
 import logoTechCrunch from "../../images/logos/techcrunch.png";
 import logoBusinessInsider from "../../images/logos/business-insider.png";
 import logoForbes from "../../images/logos/forbes.png";
 import logoNewYorkTimes from "../../images/logos/the-new-york-times.png";
 import logoUsaToday from "../../images/logos/usa-today.png";
-import styled from "styled-components";
 
 const StyledFeaturedIn = styled.div`
   grid-column: 2/-2;

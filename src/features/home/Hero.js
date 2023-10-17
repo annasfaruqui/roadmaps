@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-import heroImg from "../../images/sections-header-image.jpg";
 import Button from "../../ui/Button";
+
+import heroImg from "../../images/sections-header-image.jpg";
 
 const StyledHero = styled.div`
   grid-column: 1/-1;

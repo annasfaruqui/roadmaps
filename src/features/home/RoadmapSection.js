@@ -1,12 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import GlobalP from "../../styles/GlobalP";
 
 import Quotations from "../../ui/Quotations";
-import SpinnerMini from "../../ui/SpinnerMini";
-
-import { useUser } from "../authentication/useUser";
 import SectionHeading from "../../ui/SectionHeading";
 import SubHeading from "../../ui/SubHeading";
 
@@ -27,15 +23,6 @@ const Description = styled.p`
 `;
 
 function RoadmapSection() {
-  const navigate = useNavigate();
-  const { isLoading, isAuthenticated } = useUser();
-
-  function handleClick() {
-    if (!isLoading && !isAuthenticated) navigate("/login");
-    if (isLoading) return <SpinnerMini />;
-    if (isAuthenticated) navigate("/assessment-home");
-  }
-
   return (
     <Container>
       <SectionHeading>Importance of Roadmaps</SectionHeading>
@@ -60,12 +47,6 @@ function RoadmapSection() {
       <StyledGrid>
         <Quotations />
       </StyledGrid>
-      {/* <HighlightContainer type="horizontal">
-        <Heading as="h5">Try our psychometric assessment now!</Heading>
-        <Button size="large" onClick={handleClick}>
-          TAKE ASSESSMENT{" "}
-        </Button>
-      </HighlightContainer> */}
     </Container>
   );
 }

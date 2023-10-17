@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { LiaHandPointRight } from "react-icons/lia";
 
-import img from "../../images/carousel/carousel-img-2.jpg";
 import Title from "../../ui/Title";
 import SectionHeading from "../../ui/SectionHeading";
+
+import img from "../../images/about/company-mission.jpg";
 
 const Container = styled.div`
   display: flex;

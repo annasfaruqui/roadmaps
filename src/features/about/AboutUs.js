@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-import companyImage from "../../images/about-page/company-img-2.jpg";
 import Title from "../../ui/Title";
 import SectionHeading from "../../ui/SectionHeading";
+
+import companyImage from "../../images/about/company-img.jpg";
 
 const StyledAboutUs = styled.div`
   display: flex;

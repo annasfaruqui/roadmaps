@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 
 import Title from "../../ui/Title";
+import SectionHeading from "../../ui/SectionHeading";
 
 import member1 from "../../images/team/zain-1.png";
 import member2 from "../../images/team/zain-2.png";
@@ -14,7 +15,6 @@ import member3 from "../../images/team/zain-3.png";
 import member4 from "../../images/team/zain-4.png";
 import member5 from "../../images/team/zain-5.png";
 import member6 from "../../images/team/zain-6.png";
-import SectionHeading from "../../ui/SectionHeading";
 
 const teamMembers = [
   {
@@ -74,8 +74,6 @@ const CardContainer = styled.div`
 `;
 
 const Card = styled.div`
-  /* border: 1px solid var(--color-brand-600); */
-
   display: flex;
   flex-direction: column;
 

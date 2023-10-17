@@ -6,11 +6,11 @@ import "./roadmap.css";
 import Modal from "../../ui/Modal";
 import Heading from "../../ui/Heading";
 
-import { frontendRoadmap } from "./data/data-frontend";
-import { backendRoadmap } from "./data/data-backend";
-import { devopsRoadmap } from "./data/data-devops";
-import { softwareArchitectureRoadmap } from "./data/data-softwareArchitecture";
-import { uiuxDesigningRoadmap } from "./data/data-uiuxDesigning";
+import { frontendRoadmap } from "../../data/data-frontend";
+import { backendRoadmap } from "../../data/data-backend";
+import { devopsRoadmap } from "../../data/data-devops";
+import { softwareArchitectureRoadmap } from "../../data/data-softwareArchitecture";
+import { uiuxDesigningRoadmap } from "../../data/data-uiuxDesigning";
 
 const P = styled.p`
   font-size: 1.8rem;

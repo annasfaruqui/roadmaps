@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import SectionHeading from "./SectionHeading";
 import SubHeading from "./SubHeading";
 import Button from "./Button";
+import Modal from "./Modal";
+import AssessmentModal from "../features/assessment/AssessmentModal";
+
 import { useUser } from "../features/authentication/useUser";
-import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -76,15 +79,24 @@ function JoinCommunity() {
                 <HeadingLine>
                   At PathFinder, we're more than just a platform
                 </HeadingLine>
+                <P>
+                  Simply sign up for an account and start exploring the world of
+                  tech and keep your progress. We can't wait to welcome you and
+                  embark on this exciting journey together.
+                </P>
                 <Button size="huge" onClick={() => navigate("/signup")}>
                   Join us now
                 </Button>
+                <P>Try our psychometric assessment now</P>
+                <Modal>
+                  <Modal.Open opens="assessment">
+                    <Button size="huge">Take assessment</Button>
+                  </Modal.Open>
+                  <Modal.Window name="assessment">
+                    <AssessmentModal />
+                  </Modal.Window>
+                </Modal>
               </CtaSection>
-              <P>
-                Simply sign up for an account and start exploring the world of
-                tech and keep your progress. We can't wait to welcome you and
-                embark on this exciting journey together.
-              </P>
             </Div>
           </Description>
         </>
@@ -98,11 +110,22 @@ function JoinCommunity() {
                 <HeadingLine>
                   At PathFinder, we're more than just a platform
                 </HeadingLine>
+                <P>
+                  Continue exploring roadmaps and keep track of your progress
+                </P>
                 <Button size="huge" onClick={() => navigate("/dashboard")}>
                   Go to Dashboard
                 </Button>
+                <P>Try our psychometric assessment now</P>
+                <Modal>
+                  <Modal.Open opens="assessment">
+                    <Button size="huge">Take assessment</Button>
+                  </Modal.Open>
+                  <Modal.Window name="assessment">
+                    <AssessmentModal />
+                  </Modal.Window>
+                </Modal>
               </CtaSection>
-              <P>Continue exploring roadmaps and keep track of your progress</P>
             </Div>
           </Description>
         </>

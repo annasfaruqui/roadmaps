@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Title from "../../ui/Title";
 import SectionHeading from "../../ui/SectionHeading";
 
-import { articles } from "../../components/Roadmaps/data/data-articles";
+import { articles } from "../../data/data-articles";
 
 const ArticlesContainer = styled.div`
   display: flex;

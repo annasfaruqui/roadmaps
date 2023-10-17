@@ -1,7 +1,7 @@
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import { testimonials } from "../../components/Roadmaps/data/data-testimonials";
+import { testimonials } from "../../data/data-testimonials";
 import Testimonial from "./Testimonial";
 import styled from "styled-components";
 

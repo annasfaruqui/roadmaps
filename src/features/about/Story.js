@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-import meeting from "../../images/about-page/meeting.jpg";
-import learning from "../../images/about-page/learning.jpg";
 import Title from "../../ui/Title";
 import SectionHeading from "../../ui/SectionHeading";
+
+import meeting from "../../images/about/meeting.jpg";
+import learning from "../../images/about/learning.jpg";
 
 const Container = styled.div`
   display: flex;
