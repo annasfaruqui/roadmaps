@@ -79,13 +79,13 @@ function Testimonial({ testimonial }) {
       </ProfileContainer>
       <Rating>
         <p>
-          {Array.from({ length: testimonial.stars }, (_) => (
-            <span>
+          {Array.from({ length: testimonial.stars }, (_, i) => (
+            <span key={i}>
               <AiFillStar />
             </span>
           ))}
-          {Array.from({ length: MAX_RATING - testimonial.stars }, (_) => (
-            <span>
+          {Array.from({ length: MAX_RATING - testimonial.stars }, (_, i) => (
+            <span key={i}>
               <AiOutlineStar />
             </span>
           ))}

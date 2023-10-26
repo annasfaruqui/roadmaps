@@ -91,9 +91,9 @@
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid var(--color-grey-100);
-  box-shadow: var(--shadow-sm);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* border: 1px solid var(--color-grey-100); */
+  /* box-shadow: var(--shadow-sm); */
   position: relative;
   border-radius: 6px;
   transition: all 0.2s;
@@ -125,7 +125,7 @@
 }
 
 .content:hover {
-  box-shadow: var(--shadow-lg);
+  /* box-shadow: var(--shadow-lg); */
   transform: scale(1.001);
 }
 

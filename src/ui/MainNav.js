@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { HiOutlineRocketLaunch, HiOutlineUser } from "react-icons/hi2";
 import { LuLayoutDashboard } from "react-icons/lu";
 
 const NavList = styled.ul`
@@ -64,6 +64,12 @@ function MainNav() {
           <StyledNavLink to="/roadmaps">
             <HiOutlineRocketLaunch />
             <span>Roadmaps</span>
+          </StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink to="/account">
+            <HiOutlineUser />
+            <span>User Account</span>
           </StyledNavLink>
         </li>
       </NavList>

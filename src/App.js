@@ -24,13 +24,16 @@ import AccountPage from "./pages/AccountPage";
 import PageNotFound from "./pages/PageNotFound";
 
 import PersonalizedRoadmaps from "./components/PersonalizedRoadmaps";
-import RoadMap from "./components/Roadmaps/RoadMap";
+import RoadMapPage from "./components/Roadmaps/RoadMapPage";
+
+import TestRoadmap from "./features/roadmaps/TestRoadmap";
 
 import LandingPageLayout from "./ui/LandingPageLayout";
 import ProtectedRoute from "./ui/ProtectedRoute";
 import AppLayout from "./ui/AppLayout";
 
 import { DarkModeProvider } from "./context/DarkModeContext";
+import AllRoadmapsPage from "./pages/AllRoadmapsPage";
 
 // Used to set up Cache behind the scenes
 const queryClient = new QueryClient({
@@ -72,8 +75,11 @@ function App() {
               <Route index element={<Navigate replace to="/dashboard" />} />
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/account" element={<AccountPage />} />
-              <Route path="/roadmaps" element={<PersonalizedRoadmaps />} />
-              <Route path="/roadmaps/:roadmap" element={<RoadMap />} />
+              <Route path="/roadmaps" element={<AllRoadmapsPage />} />
+              {/* <Route path="/roadmaps" element={<PersonalizedRoadmaps />} /> */}
+
+              {/* <Route path="/roadmaps/:roadmap" element={<RoadMapPage />} /> */}
+              {/* <Route path="/roadmaps/:roadmap" element={<TestRoadmap />} /> */}
             </Route>
 
             <Route path="*" element={<PageNotFound />} />

@@ -10,8 +10,8 @@ const StyledHero = styled.div`
 
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)
     ),
     url(${heroImg});
   background-size: cover;

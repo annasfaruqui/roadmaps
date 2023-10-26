@@ -11,16 +11,8 @@ const StyledHeaderMenu = styled.ul`
 `;
 
 function HeaderMenu() {
-  const navigate = useNavigate();
-
   return (
     <StyledHeaderMenu>
-      <li>
-        <ButtonIcon onClick={() => navigate("/account")}>
-          <HiOutlineUser />
-        </ButtonIcon>
-      </li>
-
       <li>
         <DarkModeToggle />
       </li>

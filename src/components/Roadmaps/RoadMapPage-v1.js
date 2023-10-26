@@ -79,7 +79,7 @@ function Link({ topic, desc, res }) {
   );
 }
 
-function RoadMap() {
+function RoadMapPage() {
   const { roadmap } = useParams();
   console.log(roadmap);
 
@@ -131,4 +131,4 @@ function RoadMap() {
   );
 }
 
-export default RoadMap;
+export default RoadMapPage;
