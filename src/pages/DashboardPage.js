@@ -5,7 +5,7 @@ import DashboardLayout from "../features/dashboard/DashboardLayout";
 function DashboardPage() {
   return (
     <>
-      <Row type="horizontal">
+      <Row>
         <Heading as="h1">Dashboard</Heading>
       </Row>
 

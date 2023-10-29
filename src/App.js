@@ -3,7 +3,15 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
 
+// Global stylesheet
 import GlobalStyles from "./styles/GlobalStyles";
+
+// Protected Route, so that unauthorized users cannot see the pages inside this route
+import ProtectedRoute from "./ui/ProtectedRoute";
+
+// Different Page Layouts
+import LandingPageLayout from "./ui/LandingPageLayout"; // outside ProtectedRoute
+import AppLayout from "./ui/AppLayout"; // inside ProtectedRoute
 
 // HomePage pages
 import HomePage from "./pages/HomePage";
@@ -16,24 +24,18 @@ import AssessmentPage from "./pages/AssessmentPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 
-// After login pages(in protected Route)
+// After login pages(in ProtectedRoute)
 import DashboardPage from "./pages/DashboardPage";
 import AccountPage from "./pages/AccountPage";
+import AllRoadmapsPage from "./pages/AllRoadmapsPage";
+import RoadmapTimelinePage from "./pages/RoadmapTimelinePage";
+import RoadmapItemLinksPage from "./pages/RoadmapItemLinksPage";
 
 // Some other pages
 import PageNotFound from "./pages/PageNotFound";
 
-import PersonalizedRoadmaps from "./components/PersonalizedRoadmaps";
-import RoadMapPage from "./components/Roadmaps/RoadMapPage";
-
-import TestRoadmap from "./features/roadmaps/TestRoadmap";
-
-import LandingPageLayout from "./ui/LandingPageLayout";
-import ProtectedRoute from "./ui/ProtectedRoute";
-import AppLayout from "./ui/AppLayout";
-
+// Dark mode provider for switching between dark mode and light mode
 import { DarkModeProvider } from "./context/DarkModeContext";
-import AllRoadmapsPage from "./pages/AllRoadmapsPage";
 
 // Used to set up Cache behind the scenes
 const queryClient = new QueryClient({
@@ -76,10 +78,14 @@ function App() {
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/account" element={<AccountPage />} />
               <Route path="/roadmaps" element={<AllRoadmapsPage />} />
-              {/* <Route path="/roadmaps" element={<PersonalizedRoadmaps />} /> */}
-
-              {/* <Route path="/roadmaps/:roadmap" element={<RoadMapPage />} /> */}
-              {/* <Route path="/roadmaps/:roadmap" element={<TestRoadmap />} /> */}
+              <Route
+                path="/roadmaps/:roadmap"
+                element={<RoadmapTimelinePage />}
+              />
+              <Route
+                path="/roadmaps/:roadmap/:roadmapItem"
+                element={<RoadmapItemLinksPage />}
+              />
             </Route>
 
             <Route path="*" element={<PageNotFound />} />

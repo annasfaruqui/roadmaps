@@ -1,12 +1,16 @@
+import FlipCards from "../features/roadmaps/FlipCards";
 import Heading from "../ui/Heading";
+import Row from "../ui/Row";
 
 function AllRoadmapsPage() {
   return (
-    <div>
-      <Heading as="h1" type="heading">
-        ALL ROADMAPS Page
-      </Heading>
-    </div>
+    <>
+      <Row>
+        <Heading as="h1">All Roadmaps</Heading>
+      </Row>
+
+      <FlipCards />
+    </>
   );
 }
 

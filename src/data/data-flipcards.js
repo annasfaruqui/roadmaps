@@ -1,9 +1,3 @@
-import React from "react";
-import FlipCard from "./FlipCard"; // Import the FlipCard component
-import Heading from "../ui/Heading";
-
-import "./FlipCard.css";
-
 // IMAGES
 import frontend from "../images/roadmap-illusartions/frontend.svg";
 import backend from "../images/roadmap-illusartions/backend.svg";
@@ -53,12 +47,11 @@ const tempData = [
     background: cybersecurity,
   },
 ];
-console.log("Temporary Data:", tempData);
 
 //////////////////////////////////////////////////////////////////////////////////
 // ACTUAL DATA USED IN APPLICATION
 
-const dataFlipCard = [
+export const dataFlipCard = [
   {
     link: "frontend-development",
     title: "Frontend Development",
@@ -92,26 +85,3 @@ const dataFlipCard = [
     background: ml,
   },
 ];
-
-const flipCards = dataFlipCard;
-
-function PersonalizedRoadmaps() {
-  return (
-    <div className="personalized-roadmaps">
-      <Heading as="h1">Personalized Roadmaps</Heading>
-      <div className="flip-card-container">
-        {flipCards.map((flipcard) => (
-          <FlipCard
-            key={flipcard.link}
-            title={flipcard.title}
-            description={flipcard.description}
-            link={flipcard.link}
-            background={flipcard.background}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default PersonalizedRoadmaps;
