@@ -1,7 +1,9 @@
 import styled from "styled-components";
+
 import AboutUs from "../features/about/AboutUs";
 import Mission from "../features/about/Mission";
 import Story from "../features/about/Story";
+
 import { useScrollToTop } from "../hooks/useScrollToTop";
 
 const Container = styled.div`

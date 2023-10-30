@@ -1,5 +1,7 @@
 import styled from "styled-components";
+
 import Heading from "../../ui/Heading";
+
 import { useUser } from "../authentication/useUser";
 
 const StyledWelcome = styled.div`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import FooterHeading from "./FooterHeading";
 
 const Container = styled.div`

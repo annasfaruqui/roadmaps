@@ -1,7 +1,7 @@
 import Roadmap from "../features/roadmaps/Roadmap";
 
-function RoadmapTimelinePage() {
+function RoadmapPage() {
   return <Roadmap />;
 }
 
-export default RoadmapTimelinePage;
+export default RoadmapPage;

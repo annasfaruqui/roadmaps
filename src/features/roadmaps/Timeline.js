@@ -1,15 +1,15 @@
 import { useState } from "react";
 import styled from "styled-components";
 
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import { HiOutlineChevronDown } from "react-icons/hi";
+import { FaFlagCheckered } from "react-icons/fa";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
-import { HiOutlineChevronDoubleDown } from "react-icons/hi";
-import { HiOutlineChevronDown } from "react-icons/hi";
-import { FaFlagCheckered } from "react-icons/fa";
 
 import ButtonLink from "../../ui/ButtonLink";
 import ButtonGroup from "../../ui/ButtonGroup";

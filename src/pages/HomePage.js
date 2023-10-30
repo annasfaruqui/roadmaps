@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-import Footer from "../ui/Footer";
-import HomeContent from "../features/home/HomeContent";
-import FeaturedIn from "../features/home/FeaturedIn";
 import Hero from "../features/home/Hero";
-import HomeNav from "../ui/HomeNav";
+import FeaturedIn from "../features/home/FeaturedIn";
+import HomeContent from "../features/home/HomeContent";
 import Testimonials from "../features/testimonials/Testimonials";
+import HomeNav from "../ui/HomeNav";
+import JoinCommunity from "../ui/JoinCommunity";
+import Footer from "../ui/Footer";
 
 import { useScrollToTop } from "../hooks/useScrollToTop";
-import JoinCommunity from "../ui/JoinCommunity";
 
 const Body = styled.div`
   display: grid;

@@ -28,7 +28,7 @@ import SignupPage from "./pages/SignupPage";
 import DashboardPage from "./pages/DashboardPage";
 import AccountPage from "./pages/AccountPage";
 import AllRoadmapsPage from "./pages/AllRoadmapsPage";
-import RoadmapTimelinePage from "./pages/RoadmapTimelinePage";
+import RoadmapPage from "./pages/RoadmapPage";
 import RoadmapItemLinksPage from "./pages/RoadmapItemLinksPage";
 
 // Some other pages
@@ -78,10 +78,7 @@ function App() {
               <Route path="/dashboard" element={<DashboardPage />} />
               <Route path="/account" element={<AccountPage />} />
               <Route path="/roadmaps" element={<AllRoadmapsPage />} />
-              <Route
-                path="/roadmaps/:roadmap"
-                element={<RoadmapTimelinePage />}
-              />
+              <Route path="/roadmaps/:roadmap" element={<RoadmapPage />} />
               <Route
                 path="/roadmaps/:roadmap/:roadmapItem"
                 element={<RoadmapItemLinksPage />}

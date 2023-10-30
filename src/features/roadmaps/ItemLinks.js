@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 import Button from "../../ui/Button";
 
+import { capitalizeFirstLetterEveryWord } from "../../utils/capitalizer";
+
 import { frontendRoadmap } from "../../data/data-frontend";
 import { backendRoadmap } from "../../data/data-backend";
 import { devopsRoadmap } from "../../data/data-devops";
 import { uiuxDesigningRoadmap } from "../../data/data-uiuxDesigning";
 import { softwareArchitectureRoadmap } from "../../data/data-softwareArchitecture";
-
-import { capitalizeFirstLetterEveryWord } from "../../utils/capitalizer";
 
 const LinkContainer = styled.div`
   display: flex;

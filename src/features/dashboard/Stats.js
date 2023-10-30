@@ -6,6 +6,7 @@ import {
 } from "react-icons/hi2";
 
 import Stat from "./Stat";
+
 import { formatCurrency } from "../../utils/helpers";
 
 function Stats({ bookings, confirmedStays, cabinCount, numDays }) {

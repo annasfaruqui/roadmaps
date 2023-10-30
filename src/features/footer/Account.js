@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import ListLayout from "./ListLayout";
 import FooterHeading from "./FooterHeading";
+
 import { useUser } from "../authentication/useUser";
 
 function Account() {

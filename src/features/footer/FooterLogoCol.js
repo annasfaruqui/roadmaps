@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import {
   AiOutlineFacebook,
@@ -6,7 +7,6 @@ import {
 } from "react-icons/ai";
 
 import Logo from "../../ui/Logo";
-import { useNavigate } from "react-router-dom";
 
 const LogoCol = styled.div`
   padding: 3rem 0;

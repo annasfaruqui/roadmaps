@@ -1,10 +1,11 @@
 import { Outlet, useLocation } from "react-router-dom";
+import styled from "styled-components";
+
 import HomeNav from "./HomeNav";
+import JoinCommunity from "./JoinCommunity";
+import Footer from "./Footer";
 
 import bgImg from "../images/sections-header-image.jpg";
-import styled from "styled-components";
-import Footer from "./Footer";
-import JoinCommunity from "./JoinCommunity";
 
 const Body = styled.div`
   display: grid;

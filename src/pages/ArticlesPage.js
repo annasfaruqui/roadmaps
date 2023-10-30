@@ -1,5 +1,7 @@
 import styled from "styled-components";
+
 import Articles from "../features/articles/Articles";
+
 import { useScrollToTop } from "../hooks/useScrollToTop";
 
 const Container = styled.div`

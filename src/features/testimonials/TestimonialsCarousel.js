@@ -1,9 +1,11 @@
+import styled from "styled-components";
+
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import { testimonials } from "../../data/data-testimonials";
 import Testimonial from "./Testimonial";
-import styled from "styled-components";
+
+import { testimonials } from "../../data/data-testimonials";
 
 const GridOfThree = styled.div`
   margin: 3rem auto;

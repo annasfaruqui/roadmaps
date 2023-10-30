@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import FlipCard from "./FlipCard";
 
 import { dataFlipCard } from "../../data/data-flipcards";

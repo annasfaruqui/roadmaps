@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import ProfileCard from "./ProfileCard";
+
 import Welcome from "./Welcome";
+import ProfileCard from "./ProfileCard";
 
 const StyledDashboardLayout = styled.div`
   display: grid;

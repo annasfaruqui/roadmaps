@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ReactCardFlip from "react-card-flip";
 import styled from "styled-components";
+import ReactCardFlip from "react-card-flip";
 
 const Card = styled.div`
   height: 42rem;

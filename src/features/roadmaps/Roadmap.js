@@ -1,17 +1,17 @@
 import { useParams } from "react-router-dom";
 
+import Row from "../../ui/Row";
+import SectionHeading from "../../ui/SectionHeading";
+import Heading from "../../ui/Heading";
+import Timeline from "./Timeline";
+
+import { capitalizeFirstLetterEveryWord } from "../../utils/capitalizer";
+
 import { frontendRoadmap } from "../../data/data-frontend";
 import { backendRoadmap } from "../../data/data-backend";
 import { devopsRoadmap } from "../../data/data-devops";
 import { softwareArchitectureRoadmap } from "../../data/data-softwareArchitecture";
 import { uiuxDesigningRoadmap } from "../../data/data-uiuxDesigning";
-
-import Heading from "../../ui/Heading";
-import Timeline from "./Timeline";
-
-import { capitalizeFirstLetterEveryWord } from "../../utils/capitalizer";
-import Row from "../../ui/Row";
-import SectionHeading from "../../ui/SectionHeading";
 
 function Roadmap() {
   const { roadmap } = useParams();

@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { useUser } from "../authentication/useUser";
+
 import Heading from "../../ui/Heading";
+
+import { useUser } from "../authentication/useUser";
 
 const Card = styled.div`
   grid-column: 3 / span 2;

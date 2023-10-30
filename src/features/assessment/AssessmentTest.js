@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import "./InteractiveAssessmentHome.css";
+
 import Button from "../../ui/Button";
-import { useNavigate } from "react-router-dom";
 
 const Question = styled.h4`
   font-size: 2.6rem;
