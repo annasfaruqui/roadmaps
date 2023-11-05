@@ -12,6 +12,7 @@ import { backendRoadmap } from "../../data/data-backend";
 import { devopsRoadmap } from "../../data/data-devops";
 import { softwareArchitectureRoadmap } from "../../data/data-softwareArchitecture";
 import { uiuxDesigningRoadmap } from "../../data/data-uiuxDesigning";
+import GoBackButton from "../../ui/GoBackButton";
 
 function Roadmap() {
   const { roadmap } = useParams();
@@ -30,12 +31,15 @@ function Roadmap() {
   return (
     <>
       <Row>
-        <SectionHeading>
-          Roadmaps &nbsp;
-          <span style={{ color: "var(--color-grey-700)" }}>
-            &gt;
-          </span> &nbsp; {title}
-        </SectionHeading>
+        <Row type="horizontal">
+          <SectionHeading>
+            Roadmaps &nbsp;
+            <span style={{ color: "var(--color-grey-700)" }}>
+              &gt;
+            </span> &nbsp; {title}
+          </SectionHeading>
+          <GoBackButton />
+        </Row>
         <Heading as="h1">{title} Roadmap</Heading>
       </Row>
       <Timeline renderRoadmap={renderRoadmap} roadmapUrl={roadmap} />

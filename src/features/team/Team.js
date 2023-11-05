@@ -9,51 +9,7 @@ import {
 import Title from "../../ui/Title";
 import SectionHeading from "../../ui/SectionHeading";
 
-import member1 from "../../images/team/zain-1.png";
-import member2 from "../../images/team/zain-2.png";
-import member3 from "../../images/team/zain-3.png";
-import member4 from "../../images/team/zain-4.png";
-import member5 from "../../images/team/zain-5.png";
-import member6 from "../../images/team/zain-6.png";
-
-const teamMembers = [
-  {
-    id: 1,
-    name: "Zain-ul-Abideen",
-    role: "Learning Enthusiast",
-    image: `${member1}`,
-  },
-  {
-    id: 2,
-    name: "Rohan",
-    role: "Web Developer",
-    image: `${member2}`,
-  },
-  {
-    id: 3,
-    name: "Taabish",
-    role: "Tech Enthusiast",
-    image: `${member3}`,
-  },
-  {
-    id: 4,
-    name: "Abhishek",
-    role: "Learning Enthusiast",
-    image: `${member4}`,
-  },
-  {
-    id: 5,
-    name: "Member 5",
-    role: "Web Developer",
-    image: `${member5}`,
-  },
-  {
-    id: 6,
-    name: "Member 6",
-    role: "Tech Enthusiast",
-    image: `${member6}`,
-  },
-];
+import { teamMembers } from "../../data/data-teamMembers";
 
 const Container = styled.div`
   display: flex;
@@ -106,7 +62,7 @@ const Card = styled.div`
   }
 
   &:hover img {
-    filter: brightness(1);
+    filter: brightness(0.9);
     transform: scale(1.08);
   }
 `;
@@ -114,6 +70,7 @@ const Card = styled.div`
 const ImgContainer = styled.div`
   background-color: var(--color-brand-50);
   overflow: hidden;
+  position: relative;
 
   display: flex;
   justify-content: center;
@@ -122,11 +79,48 @@ const ImgContainer = styled.div`
   height: 35rem;
 `;
 
+const HoverDetails = styled.div`
+  position: absolute;
+
+  top: -50%;
+  transform: translateY(-50%);
+
+  width: 100%;
+  height: 300%;
+
+  padding: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 99999;
+
+  transition: all 0.3s;
+
+  color: var(--color-grey-800);
+
+  & h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  & p {
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+
+  &:hover {
+    top: 50%;
+  }
+`;
+
 const Img = styled.img`
   max-height: 100%;
   max-width: 100%;
   opacity: 1;
-  filter: brightness(60%);
+  filter: brightness(40%);
 
   transition: all 0.3s;
 `;
@@ -182,6 +176,10 @@ function CardComponent({ member }) {
   return (
     <Card>
       <ImgContainer>
+        <HoverDetails>
+          <h3>{member.fullName}</h3>
+          <p>{member.usn}</p>
+        </HoverDetails>
         <Img src={member.image} alt={`${member.name}(Team member)`} />
       </ImgContainer>
       <Details>

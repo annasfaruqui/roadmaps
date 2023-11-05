@@ -44,7 +44,7 @@ function Contact() {
     <Container>
       <FooterHeading>Contact us</FooterHeading>
       <ContactInfo>
-        <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+        <p>Sharanbasva University, Gulbarga</p>
         <ContactLink>
           <a href="tel:123-456-7890">123-456-7890</a>
           <a href="mailto:hello@pathfinder.com">hello@pathfinder.com</a>

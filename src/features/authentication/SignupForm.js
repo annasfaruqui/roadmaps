@@ -34,6 +34,7 @@ function SignupForm() {
         onSettled: () => reset(),
       }
     );
+    navigate(-1);
   }
 
   function handleCancel() {
@@ -45,7 +46,7 @@ function SignupForm() {
     <Form onSubmit={handleSubmit(onSubmit)}>
       <FormRow label="Full name" error={errors?.fullName?.message}>
         <Input
-          // type="text"
+          type="text"
           id="fullName"
           disabled={isSigningUp}
           {...register("fullName", { required: "This field is required" })}
@@ -54,7 +55,7 @@ function SignupForm() {
 
       <FormRow label="Qualification" error={errors?.qualification?.message}>
         <Input
-          // type="text"
+          type="text"
           id="qualification"
           disabled={isSigningUp}
           {...register("qualification", { required: "This field is required" })}

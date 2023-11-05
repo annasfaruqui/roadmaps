@@ -10,7 +10,7 @@ const Card = styled.div`
   padding: 1rem 2rem;
   background-color: var(--color-grey-0);
   border: 1px solid var(--color-grey-100);
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-lg);
 
   display: grid;
   grid-template-columns: 1fr 18rem;
@@ -28,6 +28,7 @@ const Detail = styled.p`
 `;
 
 const Img = styled.img`
+  margin-top: 1rem;
   grid-column: 2/-1;
   border-radius: 50%;
 `;

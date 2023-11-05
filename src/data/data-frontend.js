@@ -1,4 +1,4 @@
-export const frontendRoadmap = [
+const frontendRoadmap = [
   {
     heading: "Internet",
     content:
@@ -67,14 +67,12 @@ export const frontendRoadmap = [
           "A reference guide that provides an overview of all HTML elements.",
         Resource: "https://htmlreference.io/",
       },
-
       {
         Topic: "Web Development Basics",
         Description:
           "Learn HTML and CSS with interactive tutorials and examples.",
         Resource: "https://www.internetingishard.com/html-and-css/",
       },
-
       {
         Topic: "HTML Full Course (YouTube)",
         Description:
@@ -694,3 +692,7 @@ export const frontendRoadmap = [
     ],
   },
 ];
+
+const lengthFrontend = frontendRoadmap.length;
+
+export { frontendRoadmap, lengthFrontend };

@@ -5,7 +5,6 @@ import Heading from "../../ui/Heading";
 import { useUser } from "../authentication/useUser";
 
 const StyledWelcome = styled.div`
-  /* padding: 0 2rem; */
   grid-column: 1 / span 2;
 `;
 

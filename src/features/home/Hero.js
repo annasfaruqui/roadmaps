@@ -1,6 +1,5 @@
-import styled from "styled-components";
-
-import Button from "../../ui/Button";
+import styled, { css } from "styled-components";
+import { Link } from "react-scroll";
 
 import heroImg from "../../images/sections-header-image.jpg";
 
@@ -72,6 +71,45 @@ const ButtonContainer = styled.div`
   align-items: center;
 `;
 
+const SmoothScrollButtonLink = styled(Link)`
+  border: none;
+  border-radius: var(--border-radius-sm);
+  box-shadow: var(--shadow-sm);
+
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  ${(props) =>
+    props.type === "primary" &&
+    css`
+      color: #eef2ff;
+      background-color: var(--color-brand-600);
+
+      &:hover {
+        background-color: var(--color-brand-700);
+      }
+    `}
+
+  ${(props) =>
+    props.type === "secondary" &&
+    css`
+      color: var(--color-grey-600);
+      background: var(--color-grey-0);
+      border: 1px solid var(--color-grey-200);
+
+      &:hover {
+        background-color: var(--color-grey-50);
+      }
+    `}
+
+  &:focus {
+    outline: 0;
+  }
+`;
+
 function Hero() {
   return (
     <StyledHero>
@@ -86,10 +124,27 @@ function Hero() {
           More – Your Journey Starts Here!
         </Description>
         <ButtonContainer>
-          <Button size="large">Start exploring</Button>
-          <Button sie="large" variation="secondary">
+          <SmoothScrollButtonLink
+            type="primary"
+            to="roadmaps-section"
+            spy={true}
+            smooth={true}
+            offset={-120}
+            duration={1500}
+          >
+            Start Exploring
+          </SmoothScrollButtonLink>
+
+          <SmoothScrollButtonLink
+            type="secondary"
+            to="learn-more"
+            spy={true}
+            smooth={true}
+            offset={-120}
+            duration={1000}
+          >
             Learn more &darr;
-          </Button>
+          </SmoothScrollButtonLink>
         </ButtonContainer>
       </ContentBox>
     </StyledHero>

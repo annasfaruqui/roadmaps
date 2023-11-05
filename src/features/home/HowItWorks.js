@@ -73,12 +73,12 @@ function ListItem({ children }) {
 function HowItWorks() {
   return (
     <div>
-      <SectionHeading>How it works</SectionHeading>
+      <SectionHeading id="learn-more">How it works</SectionHeading>{" "}
+      {/* for smooth scrolling using react-scroll */}
       <SubHeading>
         Unlock your path to tech mastery in 5 straightforward stages on our
         platform
       </SubHeading>
-
       <List>
         <ListItem>
           <ContentContainer>

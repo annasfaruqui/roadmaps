@@ -1,9 +1,15 @@
-import beckyImg from "../images/testimonials/becky-bellingham.jpg";
-import lucasImg from "../images/testimonials/lucas-lawrence.jpg";
+// import beckyImg from "../images/testimonials/becky-bellingham.jpg";
+// import lucasImg from "../images/testimonials/lucas-lawrence.jpg";
+// import alexImg from "../images/testimonials/alex-foster.jpg";
+// import ryanImg from "../images/testimonials/ryan-campbell.jpg";
+// import lindaImg from "../images/testimonials/linda-parker.jpg";
+
+import nikitaImg from "../images/testimonials/nikita-raikar.jpg";
+import nishantImg from "../images/testimonials/nishant-verma.jpg";
 import sarahImg from "../images/testimonials/sarah-green.jpg";
-import ryanImg from "../images/testimonials/ryan-campbell.jpg";
-import lindaImg from "../images/testimonials/linda-parker.jpg";
-import alexImg from "../images/testimonials/alex-foster.jpg";
+import helenImg from "../images/testimonials/helen-samuel.jpg";
+import dhanushreeImg from "../images/testimonials/dhanushree-jain.jpg";
+import gauravImg from "../images/testimonials/gaurav-prajapati.jpg";
 import sophieImg from "../images/testimonials/sophie-king.jpg";
 import danielImg from "../images/testimonials/daniel-mitchell.jpg";
 import rajeshImg from "../images/testimonials/rajesh-kumar.jpg";
@@ -11,19 +17,19 @@ import rajeshImg from "../images/testimonials/rajesh-kumar.jpg";
 export const testimonials = [
   {
     id: 1,
-    name: "Becky Bellingham",
+    name: "Nikita Raikar",
     occupation: "DevOps Engineer",
     stars: 5,
-    image: `${beckyImg}`,
+    image: `${nikitaImg}`,
     testimonial:
       "Your roadmap platform has been a game-changer for me as a DevOps Engineer. Thanks to your platform, I've been able to implement best practices in my work, streamline our development pipelines, and enhance collaboration between teams. Keep up the excellent work!",
   },
   {
     id: 2,
-    name: "Lucas Lawrence",
+    name: "Nishant verma",
     occupation: "Frontend Developer",
     stars: 4,
-    image: `${lucasImg}`,
+    image: `${nishantImg}`,
     testimonial:
       "I'm truly grateful for PathFinder's frontend development roadmap. It has accelerated my learning journey and helped me build responsive and user-friendly web interfaces. The comprehensive resources have made a significant impact on my career. Kudos to your team!",
   },
@@ -38,28 +44,28 @@ export const testimonials = [
   },
   {
     id: 4,
-    name: "Ryan Campbell",
+    name: "Helen Samuel",
     occupation: "Full-Stack Developer",
     stars: 5,
-    image: `${ryanImg}`,
+    image: `${helenImg}`,
     testimonial:
       "As a full-stack developer, I've benefited greatly from your platform's resources. The roadmaps offer a clear path for mastery, and the articles are filled with practical insights. It's an invaluable resource for anyone in the tech field.",
   },
   {
     id: 5,
-    name: "Linda Parker",
+    name: "Dhanushree Jain",
     occupation: "Tech Enthusiast",
     stars: 4,
-    image: `${lindaImg}`,
+    image: `${dhanushreeImg}`,
     testimonial:
       "I'm impressed with PathFinder's tech blog. It's a treasure trove of knowledge. The articles are well-researched and provide valuable insights into various tech topics. Great job!",
   },
   {
     id: 6,
-    name: "Alex Foster",
+    name: "Gaurav Prajapati",
     occupation: "Software Engineer",
     stars: 4,
-    image: `${alexImg}`,
+    image: `${gauravImg}`,
     testimonial:
       "The software engineering roadmap on your platform is exceptional. It has been instrumental in my professional growth, and I've gained in-depth knowledge of software development. Your articles are a valuable resource.",
   },

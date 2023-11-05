@@ -8,6 +8,7 @@ import Heading from "../ui/Heading";
 import { useScrollToTop } from "../hooks/useScrollToTop";
 
 import { capitalizeFirstLetterEveryWord } from "../utils/capitalizer";
+import GoBackButton from "../ui/GoBackButton";
 
 function RoadmapItemLinksPage() {
   const { roadmap, roadmapItem } = useParams();
@@ -19,14 +20,17 @@ function RoadmapItemLinksPage() {
   return (
     <>
       <Row>
-        <SectionHeading>
-          Roadmaps &nbsp;
-          <span style={{ color: "var(--color-grey-700)" }}>&gt;</span>
-          &nbsp; {title} &nbsp;
-          <span style={{ color: "var(--color-grey-700)" }}>
-            &gt;
-          </span> &nbsp; {subTitle}
-        </SectionHeading>
+        <Row type="horizontal">
+          <SectionHeading>
+            Roadmaps &nbsp;
+            <span style={{ color: "var(--color-grey-700)" }}>&gt;</span>
+            &nbsp; {title} &nbsp;
+            <span style={{ color: "var(--color-grey-700)" }}>
+              &gt;
+            </span> &nbsp; {subTitle}
+          </SectionHeading>
+          <GoBackButton />
+        </Row>
         <Heading as="h1">{subTitle}</Heading>
       </Row>
 

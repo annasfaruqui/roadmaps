@@ -7,9 +7,19 @@ import logoNewYorkTimes from "../../images/logos/the-new-york-times.png";
 import logoUsaToday from "../../images/logos/usa-today.png";
 
 const StyledFeaturedIn = styled.div`
+  grid-column: 1/-1;
+  margin-bottom: 5rem;
+
+  background-color: #d1d1d1;
+
+  display: grid;
+  grid-template-columns: 1fr repeat(12, 10rem) 1fr;
+`;
+
+const FeaturedInContent = styled.div`
   grid-column: 2/-2;
-  margin-top: 4rem;
-  margin-bottom: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 `;
 
 const SmallHeading = styled.h4`
@@ -17,6 +27,7 @@ const SmallHeading = styled.h4`
   text-transform: uppercase;
   letter-spacing: 0.75px;
   font-weight: 500;
+  color: #374151;
   text-align: center;
   margin-bottom: 3rem;
 `;
@@ -28,20 +39,23 @@ const Logos = styled.div`
 
   & img {
     height: 3.2rem;
+    filter: brightness(0);
   }
 `;
 
 function FeaturedIn() {
   return (
     <StyledFeaturedIn>
-      <SmallHeading>As featured in</SmallHeading>
-      <Logos>
-        <img src={logoTechCrunch} alt="logo" />
-        <img src={logoBusinessInsider} alt="logo" />
-        <img src={logoForbes} alt="logo" />
-        <img src={logoNewYorkTimes} alt="logo" />
-        <img src={logoUsaToday} alt="logo" />
-      </Logos>
+      <FeaturedInContent>
+        <SmallHeading>As featured in</SmallHeading>
+        <Logos>
+          <img src={logoTechCrunch} alt="logo" />
+          <img src={logoBusinessInsider} alt="logo" />
+          <img src={logoForbes} alt="logo" />
+          <img src={logoNewYorkTimes} alt="logo" />
+          <img src={logoUsaToday} alt="logo" />
+        </Logos>
+      </FeaturedInContent>
     </StyledFeaturedIn>
   );
 }

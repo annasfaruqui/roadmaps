@@ -108,9 +108,24 @@ const GlobalStyles = createGlobalStyle`
   transition: background-color 0.3s, border 0.3s;
 }
 
-/* *::-webkit-scrollbar {
-  display:none;
-} */
+*::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #999;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #444;
+  border-radius: 7px;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+  background-color: #1f1f1f;
+}
+
+
 
 html {
   font-size: 62.5%;

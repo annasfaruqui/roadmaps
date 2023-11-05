@@ -9,6 +9,7 @@ import FormRowVertical from "../../ui/FormRowVertical";
 import SpinnerMini from "../../ui/SpinnerMini";
 
 import { useLogin } from "./useLogin";
+import TestCredentials from "./TestCredentials";
 
 const ButtonBox = styled.div`
   margin-top: 2rem;
@@ -20,8 +21,8 @@ const ButtonBox = styled.div`
 `;
 
 function LoginForm() {
-  const [email, setEmail] = useState("bruisewain@pathfinder.com");
-  const [password, setPassword] = useState("batmanwholaughs");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const { login, isLoading } = useLogin();
   const navigate = useNavigate();
 
@@ -66,6 +67,8 @@ function LoginForm() {
           required
         />
       </FormRowVertical>
+
+      <TestCredentials />
 
       <ButtonBox>
         <Button
