@@ -31,10 +31,12 @@ function SignupForm() {
     signup(
       { fullName, email, password, qualification },
       {
-        onSettled: () => reset(),
+        onSettled: () => {
+          reset();
+          navigate(-1);
+        },
       }
     );
-    navigate(-1);
   }
 
   function handleCancel() {
